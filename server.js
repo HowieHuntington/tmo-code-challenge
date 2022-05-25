@@ -2,8 +2,9 @@ var express = require('express');
 var app = express();
 
 app.use(express.static(__dirname + '/index'));
-app.get("/url", (req, res, next) => {
-    res.json(["Hello", "World"]);
+app.set('view engine', 'ejs');
+app.get("/", (req, res) => {
+    res.render('index');
 });
 
 
