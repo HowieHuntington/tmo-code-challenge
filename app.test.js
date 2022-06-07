@@ -1,8 +1,15 @@
 var app = require('./app.js');
 
 
-test('Test for hello world', () => {
-    var testData = app.helloWorld();
-    expect('Hello World').toBe(testData);
+
+test('Test for shorten url', () => {
+    var urlShortener = new app.UrlShortener();
+    var testData = urlShortener.shortenUrl('Hello World!');
+    expect('861844d6').toBe(testData);
 });
+
+test('Check for duplicates', () => {
+
+});
+
 

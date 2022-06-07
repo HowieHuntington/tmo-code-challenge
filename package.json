@@ -23,6 +23,7 @@
     "mongoose": "^6.3.4",
     "readline-sync": "^1.4.10",
     "request": "^2.88.2",
-    "simple-get": "^4.0.0"
+    "simple-get": "^4.0.0",
+    "simple-js-sha2-512": "^1.0.1"
   }
 }
